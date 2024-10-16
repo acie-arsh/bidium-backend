@@ -41,7 +41,7 @@ export const register = catchAsyncErrors(async (req, res, next) => {
     }
     if (!easypaisaAccountNumber) {
       return next(
-        new ErrorHandler("Please provide your easypaisa account number.", 400)
+        new ErrorHandler("Please provide your UPI account number.", 400)
       );
     }
     if (!paypalEmail) {
